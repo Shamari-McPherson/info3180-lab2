@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="profile">
+    <div class="UpperProfile">
+        <img src="{{ url_for('static', filename='infolab2ice.jpeg')}}" alt="I am the stone that the builder refused">
+        <h1>Shamari McPherson</h1>
+        <p>justmari</p>
+        <p>St. Andrew, Jamaica</p>
+        <p>{{ date }}</p>
+    </div>    
+    <div class="LowerProfile">
+        <p>I believe there's no problem that can't be solved with icecream and a good book</p>    
+        <div class="grid-container">
+            <p>100</p>
+            <p>50</p>
+            <p>100k</p>
+            <p>Posts</p>
+            <p>Following</p>
+            <p>Followers</p>
+        </div>
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}
